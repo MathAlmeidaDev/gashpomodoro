@@ -1,0 +1,9 @@
+{
+  "name": "Gash Pomodoro",
+  "short_name": "Pomodoro",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffcc00",
+  "description": "App de produtividade com técnica Pomodoro inspirado em Gash Bell."
+}

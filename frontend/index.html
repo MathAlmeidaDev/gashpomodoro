@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gash Pomodoro</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gash Pomodoro</h1>
+
+        <div class="status">
+            <div id="status">Modo: Foco</div>
+            <div id="cycle">Ciclo: 1/4</div>
+            <!-- Removi o elemento #total-cycles daqui -->
+        </div>
+
+        <div class="timer">
+            <div id="time">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="start">Iniciar</button>
+            <button id="pause">Pausar</button>
+            <button id="reset">Resetar</button>
+        </div>
+        
+        <div id="stats">
+            <p id="focus-count">Ciclos Curtos Concluídos: 0</p>
+            <p id="full-cycle-count">Ciclos Completos (4/4): 0</p>
+        </div>
+
+        <div class="settings">
+            <h3>Configurações de Tempo (minutos)</h3>
+            <label>Foco: <input type="number" id="focus-time" value="25" min="1" /></label>
+            <label>Pausa Curta: <input type="number" id="short-break" value="5" min="1" /></label>
+            <label>Pausa Longa: <input type="number" id="long-break" value="15" min="1" /></label>
+        </div>
+
+        <div class="attack-selector">
+            <label for="power-select">Escolha o Poder:</label>
+            <select id="power-select">
+                <option value="ZAKERU">ZAKERU</option>
+                <option value="RASHIRUDO">RASHIRUDO</option>
+                <option value="JIKERUDO">JIKERUDO</option>
+                <option value="ZAKERUGA">ZAKERUGA</option>
+                <option value="BAO ZAKERUGA">BAO ZAKERUGA</option>
+            </select>
+            <button id="fire-attack">APONTAR!</button>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="attack-effect" class="hidden">
+        <video id="attack-video" class="hidden" src="powers/powers.mp4" preload="auto"></video>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
